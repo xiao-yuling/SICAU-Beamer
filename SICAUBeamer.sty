@@ -1,0 +1,107 @@
+\mode<presentation>
+
+\ProcessOptionsBeamer
+
+% ---- Logo 提取色系 ----
+\xdefinecolor{sicau}{RGB}{28, 108, 92}
+\xdefinecolor{sicauLight}{RGB}{72, 142, 128}
+\xdefinecolor{sicauVeryLight}{RGB}{188, 210, 204}
+\xdefinecolor{sicauDark}{RGB}{18, 78, 64}
+
+% ---- 外模板 ----
+\useoutertheme[footline=authorinstitutetitle,subsection=false]{smoothbars}
+
+\makeatletter
+\defbeamertemplate*{footline}{sicau_beamer}{%
+	\leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex,center]{title in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex,center]{title in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortdate
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.35\paperwidth,ht=2.5ex,dp=1.125ex,center]{author in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.15\paperwidth,ht=2.5ex,dp=1.125ex,center]{author in head/foot}%
+      \textcolor{sicauLight!60!white}{\scriptsize\insertframenumber{} / \inserttotalframenumber}
+    \end{beamercolorbox}%
+  }%
+	\vskip0pt%
+}
+\makeatother
+\setbeamertemplate{footline}[sicau_beamer]
+\setbeamertemplate{navigation symbols}{}
+
+\useinnertheme{circles}
+\usefonttheme{professionalfonts}
+
+% ---- Frametitle（复用 Beamer 默认模板，仅设定颜色）----
+
+% ---- Block 颜色 ----
+
+\setbeamercolor{block title}{bg=sicau,fg=white}
+\setbeamercolor{block body}{bg=sicauVeryLight!25}
+
+\setbeamercolor{block title alerted}{bg=sicauDark,fg=white}
+\setbeamercolor{block body alerted}{bg=sicauVeryLight!30}
+
+\setbeamercolor{block title example}{bg=sicauLight,fg=white}
+\setbeamercolor{block body example}{bg=sicauVeryLight!20}
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{frametitle}{bg=sicau,fg=white}
+\setbeamercolor{title}{fg=white,bg=sicau}
+\setbeamercolor{subtitle}{fg=sicauVeryLight,bg=sicau}
+\setbeamercolor{itemize item}{fg=sicau}
+\setbeamercolor{itemize subitem}{fg=sicauLight}
+\setbeamercolor{enumerate item}{fg=sicau}
+\setbeamercolor{caption name}{fg=sicauDark}
+\setbeamerfont{title}{series=\bfseries,size=\LARGE}
+\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{items}[circle]
+
+% ---- 相关颜色设置 ----
+\setbeamercolor{footline}{bg=sicau}
+\setbeamertemplate{bibliography item}[text]
+\setbeamertemplate{caption}[numbered]
+
+\setbeamercolor{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor{palette secondary}{use=structure,fg=white,bg=sicauLight}
+\setbeamercolor{palette tertiary}{use=structure,fg=white,bg=sicauDark}
+\setbeamercolor{palette quaternary}{fg=white,bg=sicauDark}
+\setbeamercolor{titlelike}{parent=palette primary}
+
+\setbeamercolor{item projected}{fg=white}
+\setbeamercolor{structure}{fg=sicau}
+
+% ---- 目录页 ----
+\setbeamertemplate{section in toc}{%
+  \leavevmode\leftskip=1.2em
+  \llap{\textcolor{sicau}{\rule{0.7em}{0.7em}}\hspace{0.8em}}%
+  \inserttocsection\par
+}
+\setbeamertemplate{subsection in toc}{%
+  \leavevmode\leftskip=3em
+  \llap{\textcolor{sicauLight}{\rule{0.45em}{0.45em}}\hspace{0.8em}}%
+  \inserttocsubsection\par
+}
+
+% ---- Section 分隔页（纯色封面） ----
+\AtBeginSection[]{
+  {
+    \setbeamercolor{background canvas}{bg=sicau}
+    \begin{frame}[plain]
+      \vfill
+      \begin{center}
+        \textcolor{white}{\Huge\bfseries\insertsectionnumber.~\insertsection}
+      \end{center}
+      \vfill
+    \end{frame}
+  }
+}
+
+\mode
+<all>
