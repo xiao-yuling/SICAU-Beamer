@@ -50,14 +50,28 @@ Or use your preferred LaTeX editor (TeXstudio, VS Code + LaTeX Workshop, Overlea
 ## File Structure / 文件结构
 
 ```
-├── SICAU_Beamer.tex      # Main document / 主文档
+├── SICAU_Beamer.pdf       # Compiled PDF / 编译预览
+├── SICAU_Beamer.tex       # Main document / 主文档
 ├── SICAUBeamer.sty        # Theme package / 主题包
 ├── pic/
 │   ├── SIACU_logo.png     # School logo / 校徽
 │   ├── watermark.png      # Watermark / 水印
-│   └── nature_demo.png    # Demo figure / 示例科学插图
+│   ├── nature_demo.png    # Demo figure / 示例科学插图
+│   ├── SICAU_Beamer_页面_01.jpg  # Preview / 预览页
+│   ├── SICAU_Beamer_页面_05.jpg  # Preview / 预览页
+│   └── SICAU_Beamer_页面_17.jpg  # Preview / 预览页
 └── README.md
 ```
+
+---
+
+## Preview / 预览
+
+| 封面 | 配色方案 | 科学插图 |
+|:---:|:---:|:---:|
+| ![page01](pic/SICAU_Beamer_页面_01.jpg) | ![page05](pic/SICAU_Beamer_页面_05.jpg) | ![page17](pic/SICAU_Beamer_页面_17.jpg) |
+
+[📄 Download compiled PDF](SICAU_Beamer.pdf)
 
 ---
 

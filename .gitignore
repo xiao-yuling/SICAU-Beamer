@@ -16,3 +16,4 @@
 *.fls
 _region_.*
 *.pdf
+!SICAU_Beamer.pdf
