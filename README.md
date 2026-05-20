@@ -67,9 +67,11 @@ Or use your preferred LaTeX editor (TeXstudio, VS Code + LaTeX Workshop, Overlea
 
 ## Preview / 预览
 
-| 封面 | 配色方案 | 科学插图 |
-|:---:|:---:|:---:|
-| ![page01](pic/SICAU_Beamer_页面_01.jpg) | ![page05](pic/SICAU_Beamer_页面_05.jpg) | ![page17](pic/SICAU_Beamer_页面_17.jpg) |
+![封面](pic/SICAU_Beamer_页面_01.jpg)
+
+![配色方案](pic/SICAU_Beamer_页面_05.jpg)
+
+![排版示例](pic/SICAU_Beamer_页面_16.jpg)
 
 [📄 Download compiled PDF](SICAU_Beamer.pdf)
 
