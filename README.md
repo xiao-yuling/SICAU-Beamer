@@ -1,4 +1,4 @@
-# SICAU Beamer Theme / 四川农业大学 Beamer 模板
+# SICAU Beamer Theme /四川农业大学 LATEX PPT 模板/ 四川农业大学 Beamer 模板
 
 [![XeLaTeX](https://img.shields.io/badge/compiler-XeLaTeX-blue)](https://www.overleaf.com)
 
