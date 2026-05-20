@@ -71,6 +71,10 @@ Or use your preferred LaTeX editor (TeXstudio, VS Code + LaTeX Workshop, Overlea
 
 ![配色方案](pic/SICAU_Beamer_页面_05.jpg)
 
+![场地分析](pic/SICAU_Beamer_页面_07.jpg)
+
+![代码展示](pic/SICAU_Beamer_页面_09.jpg)
+
 ![排版示例](pic/SICAU_Beamer_页面_16.jpg)
 
 [📄 Download compiled PDF](SICAU_Beamer.pdf)
