@@ -37,9 +37,18 @@
 \useinnertheme{circles}
 \usefonttheme{professionalfonts}
 
-% ---- Frametitle（复用 Beamer 默认模板，仅设定颜色）----
+% ---- Frametitle 纯色背景 ----
+\setbeamertemplate{frametitle}{%
+  \vskip-0.3ex
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.8ex,dp=0.8ex]{frametitle}%
+    \usebeamerfont{frametitle}\hspace{0.3em}\insertframetitle
+  \end{beamercolorbox}%
+}
 
-% ---- Block 颜色 ----
+\setbeamercolor{frametitle}{bg=sicau,fg=white}
+
+% ---- Modern Block: 圆角 + 淡色背景 ----
+\setbeamertemplate{blocks}[rounded][shadow=true]
 
 \setbeamercolor{block title}{bg=sicau,fg=white}
 \setbeamercolor{block body}{bg=sicauVeryLight!25}
@@ -50,7 +59,6 @@
 \setbeamercolor{block title example}{bg=sicauLight,fg=white}
 \setbeamercolor{block body example}{bg=sicauVeryLight!20}
 \setbeamercolor{normal text}{fg=black,bg=white}
-\setbeamercolor{frametitle}{bg=sicau,fg=white}
 \setbeamercolor{title}{fg=white,bg=sicau}
 \setbeamercolor{subtitle}{fg=sicauVeryLight,bg=sicau}
 \setbeamercolor{itemize item}{fg=sicau}
